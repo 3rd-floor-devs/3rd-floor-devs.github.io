@@ -6,6 +6,7 @@ theme:
     primary: indigo
     accent: indigo
   features:
+    - navigation.tabs
     - search.suggest
     - content.code.copy
 
