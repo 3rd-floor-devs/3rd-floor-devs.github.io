@@ -1,4 +1,4 @@
-site_name: 3rd Floor Devs Study
+﻿site_name: 3rd Floor Devs Study
 
 theme:
   name: material
@@ -12,12 +12,36 @@ theme:
 
 nav:
   - 홈: index.md
-  - 기본환경 설정: setup.md
+  - 기본환경 설정:
+      - 개요: setup/index.md
+      - 기본 도구:
+          - UV 설치 및 초기화: setup/uv.md
+          - Python 설치: setup/python.md
+          - Node.js 설치: setup/node.md
+          - Git 설치와 기본 명령어: setup/git.md
+      - 라이브러리 설치:
+          - 개요: setup/libs/index.md
+          - Playwright (Node/Python): setup/libs/playwright.md
+          - Phoenix (LangChain): setup/libs/phoenix.md
+          - Poppler (환경변수 설정): setup/libs/poppler.md
   - 주제와 코드:
       - 개요: topics-code/index.md
-      - 프론트엔드: topics-code/frontend.md
-      - 백엔드: topics-code/backend.md
-      - 데이터/AI: topics-code/data-ai.md
+      - LLM:
+          - 개요: topics-code/llm/index.md
+          - LangChain/LangGraph: topics-code/llm/langchain-langgraph.md
+      - Vision:
+          - 개요: topics-code/vision/index.md
+      - OCR:
+          - 개요: topics-code/ocr/index.md
+      - Speech:
+          - 개요: topics-code/speech/index.md
+          - STT: topics-code/speech/stt.md
+          - TTS: topics-code/speech/tts.md
+      - DX/업무자동화:
+          - DataParc(회사 PI): topics-code/dx/dataparc.md
+          - SAP 자동화: topics-code/dx/sap.md
+      - 공통:
+          - 평가/운영: topics-code/common/ops.md
   - 아카이브: archive.md
 
 markdown_extensions:
@@ -26,3 +50,4 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - attr_list
