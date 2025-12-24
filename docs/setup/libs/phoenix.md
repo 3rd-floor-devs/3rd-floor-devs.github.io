@@ -12,7 +12,7 @@ uv pip install -U arize-phoenix
 ## 서버 실행
 
 ```powershell
-uv run python -m phoenix.server
+uv run phoenix serve
 ```
 
 기본 접속 주소: `http://localhost:6006`
