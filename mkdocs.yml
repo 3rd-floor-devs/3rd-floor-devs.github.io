@@ -1,0 +1,17 @@
+site_name: LangChain & LangGraph 스터디
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs # 상단 탭 메뉴
+    - search.suggest
+    - content.code.copy # 코드 복사 버튼
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences # 복잡한 코드 블록 지원
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
