@@ -1,17 +1,36 @@
-# Welcome to MkDocs
+# 3rd Floor Devs 스터디
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+> 함께 만들고, 매주 완성합니다.
 
-## Commands
+여기는 스터디를 위한 공간입니다. 꾸준한 연습, 실제 결과물, 명확한 피드백을 중심으로 운영합니다.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## 우리가 하는 일
 
-## Project layout
+- 주간 주제와 하나의 명확한 결과물
+- 20분 라이트닝 톡과 라이브 데모
+- 짝 리뷰로 완성도와 전달력 향상
+- 노트, 코드, 기록의 작은 아카이브
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## 진행 흐름
+
+1. 월간 리스트에서 하나의 주제를 선택
+2. 수요일까지 1페이지 개요 공유
+3. 토요일 발표 및 데모
+4. 월요일까지 짧은 회고 글 게시
+
+## 참여/문의
+
+- 소개: 이름과 학습 목표 한 가지 작성
+- 주제: 원하는 결과물과 함께 제안
+- 도움: 막힌 부분, 리뷰, 페어 요청
+
+## 빠른 링크
+
+- 일정: `docs/schedule.md`
+- 주제: `docs/topics.md`
+- 아카이브: `docs/archive.md`
+- 행동 강령: `docs/code-of-conduct.md`
+
+---
+
+강조하고 싶은 내용이나 배지가 있으면 알려주세요.
