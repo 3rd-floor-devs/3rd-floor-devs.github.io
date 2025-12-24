@@ -32,8 +32,14 @@ nav:
           - LangChain/LangGraph: topics-code/llm/langchain-langgraph.md
       - Vision:
           - 개요: topics-code/vision/index.md
+          - Azure AI Vision: topics-code/vision/azure-ai-vision.md
+          - SAM3: topics-code/vision/sam3.md
       - OCR:
           - 개요: topics-code/ocr/index.md
+          - Azure Document Intelligence: topics-code/ocr/azure-document-intelligence.md
+          - Azure AI Vision (OCR): topics-code/ocr/azure-ai-vision-ocr.md
+          - Mistral Document AI: topics-code/ocr/mistral-document-ai.md
+          - PaddleOCR: topics-code/ocr/paddleocr.md
       - Speech:
           - 개요: topics-code/speech/index.md
           - STT: topics-code/speech/stt.md

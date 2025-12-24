@@ -2,7 +2,7 @@
 
 LangChain 실험 로그/트레이싱을 위한 오픈소스 도구입니다.
 
-## 설치 (uv)
+## 서버 설치 (별도 터미널에서 실행)
 
 ```powershell
 uv venv --python 3.11
@@ -17,14 +17,21 @@ uv run phoenix serve
 
 기본 접속 주소: `http://localhost:6006`
 
-## LangChain 연동 예시
+## 프로젝트 설치 (추적/연동용)
+
+```powershell
+uv add arize-phoenix-otel openinference-instrumentation-langchain
+```
+
+## LangChain 연동 예시 (레지스터)
 
 ```python
-import phoenix as px
-from phoenix.trace.langchain import LangChainInstrumentor
+from phoenix.otel import register
 
-session = px.launch_app()
-LangChainInstrumentor().instrument()
+tracer_provider = register(
+    project_name="tracing-test1",
+    auto_instrument=True
+)
 ```
 
 ```python
