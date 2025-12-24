@@ -1,17 +1,27 @@
-site_name: LangChain & LangGraph 스터디
+site_name: 3rd Floor Devs Study
+
 theme:
   name: material
   palette:
     primary: indigo
     accent: indigo
   features:
-    - navigation.tabs # 상단 탭 메뉴
     - search.suggest
-    - content.code.copy # 코드 복사 버튼
+    - content.code.copy
+
+nav:
+  - 홈: index.md
+  - 기본환경 설정: setup.md
+  - 주제와 코드:
+      - 개요: topics-code/index.md
+      - 프론트엔드: topics-code/frontend.md
+      - 백엔드: topics-code/backend.md
+      - 데이터/AI: topics-code/data-ai.md
+  - 아카이브: archive.md
 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences # 복잡한 코드 블록 지원
+  - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.snippets
