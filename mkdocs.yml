@@ -20,6 +20,7 @@ nav:
           - Python 설치: setup/python.md
           - Node.js 설치: setup/node.md
           - Git 설치와 기본 명령어: setup/git.md
+          - SSL/인증서 문제 해결: setup/ssl.md
       - 라이브러리 설치:
           - 개요: setup/libs/index.md
           - Playwright (Node/Python): setup/libs/playwright.md
