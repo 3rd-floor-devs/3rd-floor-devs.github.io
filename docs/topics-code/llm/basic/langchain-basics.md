@@ -28,7 +28,21 @@ AZURE_OPENAI_ENDPOINT=여러분의_엔드포인트_URL
 
 ---
 
-## 2. 기본 실행 방식 (Invoke & Stream)
+## 2. 사전 준비 (uv 설정) 🛠️
+
+코드를 실행하기 전, `uv`를 사용하여 프로젝트를 초기화하고 필요한 라이브러리를 설치해야 합니다.
+
+```bash
+# 1. 프로젝트 초기화 (아직 안 했다면)
+uv init
+
+# 2. 필수 라이브러리 설치
+uv add langchain-openai python-dotenv openinference-instrumentation-langchain arize-phoenix-otel truststore
+```
+
+---
+
+## 3. 기본 실행 방식 (Invoke & Stream)
 
 가장 기본적인 호출 방식입니다. 질문을 던지고 한 번에 답을 받거나, 글자가 생성되는 대로 실시간으로 받을 수 있습니다.
 
