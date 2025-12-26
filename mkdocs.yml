@@ -30,7 +30,10 @@ nav:
       - 개요: topics-code/index.md
       - LLM:
           - 개요: topics-code/llm/index.md
-          - LangChain/LangGraph: topics-code/llm/langchain-langgraph.md
+          - 기초:
+              - LangChain 기본개념: topics-code/llm/basic/langchain-basics.md
+              - LangGraph 기본개념: topics-code/llm/basic/langgraph-basics.md
+          - 심화: []
       - Vision:
           - 개요: topics-code/vision/index.md
           - Azure AI Vision: topics-code/vision/azure-ai-vision.md
@@ -55,7 +58,15 @@ nav:
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - attr_list
+
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+  - js/mermaid-init.js
