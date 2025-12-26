@@ -16,10 +16,11 @@ nav:
   - 기본환경 설정:
       - 개요: setup/index.md
       - 기본 도구:
-          - UV 설치 및 초기화: setup/uv.md
           - Python 설치: setup/python.md
-          - Node.js 설치: setup/node.md
+          - UV 설치 및 초기화: setup/uv.md
           - Git 설치와 기본 명령어: setup/git.md
+          - VS Code 기본 설정: setup/vscode.md
+          - Node.js 설치: setup/node.md
           - SSL/인증서 문제 해결: setup/ssl.md
       - 라이브러리 설치:
           - 개요: setup/libs/index.md

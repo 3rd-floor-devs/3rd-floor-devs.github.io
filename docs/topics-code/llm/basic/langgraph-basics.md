@@ -57,6 +57,24 @@ from langgraph.graph.message import add_messages
 class State(TypedDict):
     # add_messages는 새로운 메시지를 기존 목록에 추가해주는 역할을 합니다.
     messages: Annotated[list, add_messages]
+
+---
+
+### [참고] 초보자를 위한 파이썬 문법 팁 💡
+
+LangGraph 코드를 보며 가장 당황스러운 부분이 바로 `TypedDict`와 `Annotated`일 것입니다. 아주 쉽게 비유해 드릴게요.
+
+#### 1. TypedDict: "똑똑한 이름표가 달린 바구니"
+보통 파이썬의 `dict`는 아무 데이터나 막 넣을 수 있습니다. 하지만 `TypedDict`는 **"이 바구니(딕셔너리)에는 반드시 이 이름의 정보가 들어있어야 하고, 그 정보는 이런 타입이어야 해!"**라고 미리 약속하는 것입니다.
+*   **왜 쓰나요?**: 나중에 코드를 짤 때 오타를 방지해주고, 어떤 데이터가 들어올지 한눈에 알 수 있게 해줍니다.
+
+#### 2. Annotated: "추가 메모가 붙은 이름표"
+`messages: list`라고만 하면 "messages는 리스트야"라는 뜻이죠. 여기에 `Annotated[list, add_messages]`라고 쓰면 다음과 같은 의미가 됩니다.
+*   **list**: "이 데이터의 진짜 본체는 리스트야."
+*   **add_messages**: "아, 그리고 LangGraph야! 새로운 메시지가 들어오면 예전 꺼를 지우지 말고 **뒷부분에 합쳐줘(Add)**."
+
+즉, `Annotated`는 **데이터 타입 옆에 "이 데이터를 어떻게 다룰지"에 대한 특별 지시사항을 적어두는 포스트잇**이라고 생각하면 됩니다! 
+- `add_messages`라는 포스트잇이 붙어있어야 대화 내용이 사라지지 않고 차곡차곡 쌓이게 됩니다.
 ```
 
 ### 2단계: 노드(Node) 정의
