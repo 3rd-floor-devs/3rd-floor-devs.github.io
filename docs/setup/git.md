@@ -36,6 +36,23 @@ git config --global user.name "여러분의_이름"
 git config --global user.email "여러분의_이메일"
 ```
 
+### 원격 저장소 상호작용 (GitHub 연동)
+로컬 프로젝트를 GitHub과 같은 원격 저장소에 처음 연결할 때 사용합니다.
+
+```bash
+# 1. 새 로컬 저장소 초기화 (이미 되어있다면 생략)
+git init
+
+# 2. 원격 저장소 연결 (origin이라는 이름으로 저장소 주소 등록)
+git remote add origin https://github.com/사용자명/저장소명.git
+
+# 3. 브랜치 이름을 main으로 변경 (기본값이 master인 경우)
+git branch -M main
+
+# 4. 첫 푸시 (원격의 main 브랜치와 연결하며 업로드)
+git push -u origin main
+```
+
 ---
 
 ## 3. 핵심 작업 흐름 (Workflow)

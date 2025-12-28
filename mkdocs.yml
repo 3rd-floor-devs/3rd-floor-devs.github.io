@@ -27,7 +27,14 @@ nav:
           - Playwright (Node/Python): setup/libs/playwright.md
           - Phoenix (LangChain): setup/libs/phoenix.md
           - Poppler (환경변수 설정): setup/libs/poppler.md
-  - 주제와 코드:
+  - 스터디 주제:
+      - 개요: study/index.md
+      - Phase 1 (1~3주): study/phase-1.md
+      - Phase 2 (4~5주): study/phase-2.md
+      - Phase 3 (6~8주): study/phase-3.md
+      - Phase 4 (9~10주): study/phase-4.md
+      - Phase 5 (11~12주): study/phase-5.md
+  - 학습 및 코드:
       - 개요: topics-code/index.md
       - LLM:
           - 개요: topics-code/llm/index.md
@@ -38,7 +45,7 @@ nav:
       - Vision:
           - 개요: topics-code/vision/index.md
           - Azure AI Vision: topics-code/vision/azure-ai-vision.md
-          - SAM3: topics-code/vision/sam3.md
+          - SAM2: topics-code/vision/sam3.md
       - OCR:
           - 개요: topics-code/ocr/index.md
           - Azure Document Intelligence: topics-code/ocr/azure-document-intelligence.md
